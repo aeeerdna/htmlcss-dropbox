@@ -1,3 +1,83 @@
+/* debug */
+.debug .logo-clienti {
+    background-color: violet;
+    color: white;
+    height: 100px;
+}
+
+.debug .introduzione {
+    background-color: #b4d0e7;
+    color: white;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.debug .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.debug .box-colorati {
+    background-color: #081753;
+    height: 300px;
+    width: 400px;
+    display: inline-block;
+}
+
+.debug .paragrafo {
+    background-color: rgb(209, 84, 1);
+    height: 300px;
+    width: 400px;
+}
+
+main section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.debug .container-main {
+    background-color: red;
+}
+
+.debug .professional {
+    background-color: yellow;
+    height: 500px;
+    width: calc(600px / 3 - 10px);
+    margin-right: 20px;
+}
+
+.debug .advanced {
+    background-color: green;
+    height: 500px;
+    width: calc(600px / 3 - 10px);
+    margin-right: 20px;
+}
+
+.debug .enterprise {
+    background-color: orange;
+    height: 500px;
+    width: calc(600px / 3);
+}
+
+.debug .enterprise-1 {
+    background-color: pink;
+    height: 200px;
+    width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* generics */
 * {
     box-sizing: border-box;
@@ -7,24 +87,64 @@
 
 body {
     font-family: sans-serif;
+    background-color: white;
 }
+
+
+/* flex */
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+
+/* utilities */
+.pulsante {
+    background-color: #0061ff;
+    border: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 
 /* Intestazione, logo e barra di navigazione */
 
+.logo-clienti {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
 
-/* Logo e link prezzi */
+.introduzione {
+    padding-top: 100px;
+    margin-bottom: 150px;
+}
 
-/* end Logo e link prezzi */
+h1 {
+    font-size: 2rem;
+    padding: 40px 0px;
+}
 
 
-/* Area personale e supporto clienti */
-
-/* end Area personale e supporto clienti */
-
-
-/* Introduzione Dropbox e link scarica prova gratuita */
-
-/* end Introduzione Dropbox e link scarica prova gratuita */
 
 
 /* end Intestazione, logo e barra di navigazione */
@@ -34,35 +154,11 @@ body {
 
 
 /* Corpo principale pagina con spiegazione sito */
+.soluzioni-standard {
+    margin-bottom: 20px;
+}
 
 
-/* Piani tariffari */
-
-/* end Piani tariffari */
-
-
-/* Trova un partner */
-
-/* end Trova un partner */
-
-
-/* Operazioni */
-
-/* end Operazioni */
-
-
-/* Statistiche app */
-
-/* end Statistiche app */
-
-
-/* Aziende che consigliano l'app */
-
-/* end Aziende che consigliano l'app */
-
-/* Q&A */
-
-/* Q&A */
 
 
 /* end Corpo principale pagina con spiegazione sito */
@@ -101,7 +197,7 @@ body {
 
 /* Seleziona lingua */
 
-/* end Seleziona lingua */
+/* end Seleziona Lingua */
 
 
 /* end Link utili */

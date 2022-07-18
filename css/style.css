@@ -31,15 +31,6 @@
     width: 400px;
 }
 
-main section {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.debug .container-main {
-    background-color: red;
-}
-
 .debug .professional {
     background-color: yellow;
     height: 500px;
@@ -57,7 +48,7 @@ main section {
 .debug .enterprise {
     background-color: orange;
     height: 500px;
-    width: calc(600px / 3);
+    width: calc(600px / 3 - 10px);
 }
 
 .debug .enterprise-1 {
@@ -66,10 +57,25 @@ main section {
     width: 600px;
 }
 
+.debug .img-partner {
+    background-color: aqua;
+    height: 400px;
+    width: calc(600px / 2 - 20px);
+    margin-right: 40px;
+}
 
+.debug .testo-partner {
+    background-color: rgb(0, 72, 255);
+    height: 400px;
+    width: calc(600px / 2 - 20px);
+}
 
-
-
+.debug .box {
+    background-color: rgb(211, 28, 211);
+    height: 150px;
+    width: calc(600px / 3 - 40px);
+    margin: 20px;
+}
 
 
 
@@ -112,6 +118,13 @@ body {
     justify-content: flex-end;
 }
 
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
 
 /* utilities */
 .pulsante {
@@ -154,6 +167,11 @@ h1 {
 
 
 /* Corpo principale pagina con spiegazione sito */
+main section {
+    max-width: 600px;
+    margin: 150px auto;
+}
+
 .soluzioni-standard {
     margin-bottom: 20px;
 }

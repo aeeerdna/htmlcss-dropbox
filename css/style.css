@@ -1,89 +1,3 @@
-/* debug */
-.debug .logo-clienti {
-    background-color: violet;
-    color: white;
-    height: 100px;
-}
-
-.debug .introduzione {
-    background-color: #b4d0e7;
-    color: white;
-    height: 500px;
-    margin-top: 100px;
-}
-
-.debug .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: red;
-}
-
-.debug .box-colorati {
-    background-color: #081753;
-    height: 300px;
-    width: 400px;
-    display: inline-block;
-}
-
-.debug .paragrafo {
-    background-color: rgb(209, 84, 1);
-    height: 300px;
-    width: 400px;
-}
-
-.debug .professional {
-    background-color: yellow;
-    height: 500px;
-    width: calc(600px / 3 - 10px);
-    margin-right: 20px;
-}
-
-.debug .advanced {
-    background-color: green;
-    height: 500px;
-    width: calc(600px / 3 - 10px);
-    margin-right: 20px;
-}
-
-.debug .enterprise {
-    background-color: orange;
-    height: 500px;
-    width: calc(600px / 3 - 10px);
-}
-
-.debug .enterprise-1 {
-    background-color: pink;
-    height: 200px;
-    width: 600px;
-}
-
-.debug .img-partner {
-    background-color: aqua;
-    height: 400px;
-    width: calc(600px / 2 - 20px);
-    margin-right: 40px;
-}
-
-.debug .testo-partner {
-    background-color: rgb(0, 72, 255);
-    height: 400px;
-    width: calc(600px / 2 - 20px);
-}
-
-.debug .box {
-    background-color: rgb(211, 28, 211);
-    height: 150px;
-    width: calc(600px / 3 - 40px);
-    margin: 20px;
-}
-
-
-
-
-
-
-
-
 /* generics */
 * {
     box-sizing: border-box;
@@ -93,8 +7,21 @@
 
 body {
     font-family: sans-serif;
-    background-color: white;
 }
+
+
+
+/* utilities */
+.pulsante {
+    background-color: #0061ff;
+    border: none;
+    padding: 10px;
+}
+
+.pulsante a {
+    color: white;
+}
+
 
 
 /* flex */
@@ -106,116 +33,193 @@ body {
     justify-content: space-between;
 }
 
-.align-center {
+.align-items {
     align-items: center;
-}
-
-.row {
-    flex-direction: row;
-}
-
-.flex-end {
-    justify-content: flex-end;
 }
 
 .column {
     flex-direction: column;
 }
 
-.wrap {
-    flex-wrap: wrap;
+.row {
+    flex-direction: row;
 }
 
-/* utilities */
-.pulsante {
-    background-color: #0061ff;
-    border: none;
-    padding: 10px;
+/* Intestazione, logo e barra navigazione */
+.dropbox-info {
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+
+/* Logo e link prezzi */
+.logo-prezzi img {
+    margin-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 0px 10px;
 }
 
 a {
+    color: black;
     text-decoration: none;
-    color: white;
 }
 
-
-/* Intestazione, logo e barra di navigazione */
-
-.logo-clienti {
-    position: fixed;
-    top: 0px;
-    width: 100%;
+i {
+    padding-right: 5px;
 }
 
+/* end Logo e link prezzi */
+
+
+/* Introduzione Dropbox */
 .introduzione {
-    padding-top: 100px;
-    margin-bottom: 150px;
+    padding-top: 150px;
+    margin-bottom: 80px;
+    background-color: #b4d0e7;
 }
 
-h1 {
-    font-size: 2rem;
-    padding: 40px 0px;
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#arrow,
+#slogan {
+    font-size: 4rem;
+}
+
+#proposta {
+    width: 100%;
+    position: relative;
+    top: 80px;
+}
+
+.prova-gratuita div {
+    margin-bottom: 20px;
+}
+
+.w-30 {
+    width: 30%;
+    padding-top: 80px;
+}
+
+.w-70 {
+    width: 70%;
 }
 
 
+/* end Introduzione Dropbox */
 
 
-/* end Intestazione, logo e barra di navigazione */
-
-
+/* end Intestazione, logo e barra navigazione */
 
 
 
 /* Corpo principale pagina con spiegazione sito */
-main section {
-    max-width: 600px;
-    margin: 150px auto;
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 800px;
 }
 
-.soluzioni-standard {
+/* Piani tariffari */
+.main-container h2 {
+    font-size: 2rem;
+    margin: 50px 0;
+    padding-top: 20px;
+}
+
+.selezione-fatturazione label {
+    margin-right: 50px;
+}
+
+.piani-tariffari {
+    margin-top: 50px;
+}
+
+.piano-professional,
+.piano-advanced,
+.piano-enterprise {
+    width: calc(100% / 3 - 10px);
+    border: 1px solid rgb(127, 125, 125);
+    padding: 10px 20px;
+}
+
+.tipo-abbonamento {
+    text-align: center;
+    padding-bottom: 10px
+}
+
+.prezzo-abbonamento {
+    margin: 30px 0px 100px;
+}
+
+.prezzo-abbonamento-team-enterprise h3,
+.prezzo-abbonamento .pulsante,
+.prezzo-abbonamento h3 {
     margin-bottom: 20px;
 }
 
+.prova-gratuita,
+.prezzo-abbonamento h4,
+.caratt-piano {
+    margin: 30px 0px;
+}
 
+.punti-salienti p,
+.caratt-piano p {
+    padding: 10px 0px;
+}
 
+.piano-enterprise-team {
+    width: 100%;
+    border: 1px solid rgb(127, 125, 125);
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.prezzo-abbonamento-team-enterprise {
+    margin: 30px 0px;
+}
+
+.ufficio-vendite {
+    margin: 30px 0px 20px;
+}
+
+/* end Piani tariffari */
+
+/* Trova un partner */
+.partner {
+    margin: 150px 0px;
+}
+
+.img-partner img {
+    width: 100%;
+    padding-right: 20px;
+}
+
+.testo-partner p,
+.testo-partner h3 {
+    margin: 15px 0px;
+}
+
+.testo-partner .pulsante {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.testo-partner a {
+    color: black;
+}
+
+/* end Trova un partner */
 
 /* end Corpo principale pagina con spiegazione sito */
-
-
-
-
-
-/* Link utili */
-
-
-/* Dropbox */
-
-/* end Dropbox */
-
-
-/* Prodotti */
-
-/* end Prodotti */
-
-
-/* Azienda */
-
-/* end Azienda */
-
-
-/* Supporto */
-
-/* end Supporto */
-
-
-/* Community */
-
-/* end Community */
-
-
-/* Seleziona lingua */
-
-/* end Seleziona Lingua */
-
-
-/* end Link utili */

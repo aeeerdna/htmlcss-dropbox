@@ -10,7 +10,6 @@ body {
 }
 
 
-
 /* utilities */
 .pulsante {
     background-color: #0061ff;
@@ -156,7 +155,7 @@ main {
 
 .tipo-abbonamento {
     text-align: center;
-    padding-bottom: 10px
+    padding: 10px 0px;
 }
 
 .prezzo-abbonamento {
@@ -222,5 +221,56 @@ main {
 }
 
 /* end Trova un partner */
+
+/* Operazioni */
+.strumento-6,
+.strumento-5,
+.strumento-4,
+.strumento-3,
+.strumento-2,
+.strumento-1 {
+    width: calc(100% / 3 - 20px);
+    padding: 0px 10px;
+    margin: 50px 0px;
+}
+
+.strumento-6 img,
+.strumento-5 img,
+.strumento-4 img,
+.strumento-3 img,
+.strumento-2 img,
+.strumento-1 img {
+    width: 100%;
+}
+
+.strumento-6 h3,
+.strumento-5 h3,
+.strumento-4 h3,
+.strumento-3 h3,
+.strumento-2 h3,
+.strumento-1 h3 {
+    margin: 20px 0px 30px;
+}
+
+.strumento-6 p,
+.strumento-5 p,
+.strumento-4 p,
+.strumento-3 h3,
+.strumento-2 p,
+.strumento-1 p {
+    font-size: .9rem;
+}
+
+
+/* end Operazioni */
+
+/* Statistiche app */
+#team-user {
+    font-size: 2rem;
+    margin: 150px 0px 50px;
+    width: 70%;
+}
+
+/* end Statistiche app */
 
 /* end Corpo principale pagina con spiegazione sito */
